@@ -2,5 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-    font-family: ;
+    font-family: anta;
+}
+
+header{
+    background-image: image(cabecalho_m1s06);
 }
