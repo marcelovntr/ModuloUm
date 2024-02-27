@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Correção aqui */
+    font-family: anta;
+}
+
+body {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;  
+    
+}
+
+
+header {
+    background-image: url(cabecalho_m1s06.jpg);
+    background-size: cover;
+    display: flex;
+  
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+
+}
+
+#section-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* Certifique-se de que a largura ocupa 100% */
+    color: aliceblue;
+    font-size: 25px;
+
+
+}
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+#foto-perfil {
+
+    margin-top: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(180, 240, 146);
+    font-size: 25px;
+    background-color: rgb(219, 49, 134);
+    padding: 15px 15px;
+    border-radius: 3px;
+
+}
+
+
+#foto-usuario {
+    padding: 1px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-style: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    /*
+    border: solid 2px rgb(88, 50, 77);*/
+}
+
+#nome-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+
+}
+
+#nome-icone img {
+    width: 50px;
+}
+
+#nome-icone img,
+h3 {
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+/*==========================================================*/
+#apresentacao {
+    color: #e5eaa4;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: rgb(168, 25, 173);
+    margin-top: 10px;
+    border-radius: 3px;
+    vertical-align: middle;
+
+}
+
+
+#apresentacao-texto {
+    display: block;
+    /*margin-left: 50px;*/
+   
+    width: 40%;
+    
+
+}
+
+#apresentacao-texto h3 {
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+#apresentacao-texto p {
+    margin-top: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+#apresentacao-foto {
+    padding: 5px;
+    /*margin-right: 50px;*/
+   
+    display: flex;
+    justify-content: center;
+}
+
+#apresentacao-foto img {
+   max-width: 80%;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#formacao{
+    background-color: rgb(129, 90, 236);
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content:flex-end;
+    border-radius: 3px; 
+    color: #e5eaa4;
+    
+}
+#formacao h3{
+    
+    width: 30%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    font-size: 30px;
+   
+    
+}
+#curriculo{
+   
+    width: 30%;
+    padding: 8px 8px;
+}
+    #curriculo ul li {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        margin-top: 2px;
+        
+    }
+    li img{
+        margin-left: 5px;
+    }
+/*************************************************************************/
+#contato{
+    background-color: rgb(74, 7, 119);
+    color: #e5eaa4;
+    display: flex;
+    text-align: center;
+    justify-content:flex-start;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#contato h3{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 30%;
+    font-size: 30px;
+   
+}
+#redes {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 30%;
+    padding: 8px 8px;
+    
+}
+#redes li{
+    margin-top: 8px;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    
+    
+}
+#redes img{
+    margin-right: 10px;
+}
+#redes a{
+    cursor: pointer;
+}
+#redes a img:hover{
+    box-shadow: 0px 0px 15px rgba(193, 238, 151, 0.5);
+    
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+footer{
+    color: #e5eaa4;
+    font-size: 18px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgb(25, 6, 131);
+    padding: 5px;
+    
+}
+footer h4{
+    
+    width: 30%;
+    margin-left: 5px;
+}
+#power{
+    width: 30%;
+    text-align:end;
+    margin-right: 5px;
+}
+#power p,
+#power img {
+    display: inline-block; 
+    vertical-align: middle;
+}
