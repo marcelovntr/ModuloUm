@@ -1,0 +1,1 @@
+alert('Seja muito bem vindo ao seu perfil de usuário!');
