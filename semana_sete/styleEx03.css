@@ -1,0 +1,169 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 226, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 75%;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+#left, #right {
+    flex: 1;
+    padding: 0;
+    height: 80%;
+    
+   
+}
+
+#left{
+    padding-top: 90px;
+    align-items: center;
+    
+   
+}
+#left,#texto, img{
+    display: flex;
+    flex-direction: column;
+}
+#texto, img{
+    width: 180px;
+}
+
+#p1{
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 30px;
+    width: 180px;
+   
+    text-align: left;
+}
+#p2{
+    margin-top: 0;
+    width: 180px;
+    font-size: 13px;
+    
+    text-align: left;
+   
+}
+#p2 span{
+    color: blue;
+    font-weight: bold;
+}
+#left img{
+    background-color: blue;
+    margin-bottom: 0px;
+    margin-top: 60px;
+   
+}
+
+#right{
+    padding-top: 90px;
+    align-items: center;
+    
+}
+#right, form, #continue{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form{
+   
+    
+    width: 250px;
+    color: rgb(141, 139, 139);
+    
+}
+form input{
+    height: 40px;
+    
+    background-color: rgb(215, 241, 248);
+    padding-left: 6px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(107, 106, 106);
+    
+   
+}
+form button{
+    height: 40px;
+   
+    background-color: rgb(64, 115, 255);
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 11px;
+    
+}
+form a{
+    font-size: 10px;
+    display: inline-flex;
+    justify-content: end;
+    text-decoration: none;
+    color: rgb(141, 139, 139);
+}
+
+#continue{
+    margin-top: 50px;
+    width: 250px;
+}
+#continue button{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: aliceblue;
+    color: rgb(141, 139, 139);
+    border: solid 1px rgb(212, 210, 210);
+    display: inline-flex;
+    align-items: center;
+   
+    padding: 8px;
+    font-size: 10px;
+   
+    
+}
+#or{
+    display: inline-flex;
+    
+    font-size: 10px;
+    color: rgb(141, 139, 139);
+    
+}
+#or hr{
+    width: 40%;
+}
+
+#continue img{
+    width: 18px;
+    margin-right: 35px;
+    margin-left: 15px;
+    
+
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
