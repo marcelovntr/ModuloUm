@@ -1,0 +1,48 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+#topo{
+    background-color: aquamarine;
+    height: 10%;
+    border-bottom-right-radius: 8px;
+    border-bottom: solid 1px greenyellow;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#abaixo{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+aside{
+    background-color: pink;
+    width: 10%;
+    border-top-right-radius: 8px;
+    border: solid 1px palevioletred;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    background-color: gray;
+    width: 90%;
+    text-align: center; text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
