@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    grid-template-rows: auto 90%;
+    height: 100vh; 
+}
+
+ .header, .sidebar, .content {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+} 
+
+.header {
+    background-color: #65f3b8;
+    grid-column: span 2; 
+}
+.sidebar {
+    background-color: #b87ac0; 
+}
+
+.content {
+    background-color: #ffbcb5;
+}
