@@ -43,6 +43,11 @@ main {
 #texto, img{
     width: 180px;
 }
+#texto a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
 
 #p1{
     margin-top: 0;
