@@ -1,0 +1,92 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background-color: black;
+}
+
+header{
+    display: inline-flex;
+    
+    background-color: rgb(0, 0, 0);
+    
+    width: 100%;
+   margin-top: 30px;
+}
+
+#esquerda{
+    margin-left: 175px;
+    font-size: 34px;
+}
+nav{
+    margin-left: 820px;
+    font-size: 18px;
+    padding-top: 10px;
+    
+}
+
+nav span{
+margin-left: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 80%;
+    margin-top: 20px;
+}
+
+#texto{
+    width: 625px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 120px;
+}
+h1{
+    font-size: 70px;
+    width: 550px;
+    text-align: left;
+    margin-left: 5px;
+}
+h1 span::before{
+    content: "\25A0"; 
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 20px;
+  color: #FFBF00;
+}
+p{
+    width: 560px;
+    font-size: 26px;
+    
+    color: #B2B2B2;
+    margin-left: 3px;
+}
+button{
+    background-color: #FFBF00;
+    color: #332200;
+    width: 195px;
+    height: 54px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-left: 5px;
+}
+
+#foto{
+    width: 625px;
+    background-color: pink;
+    overflow: hidden;
+
+}
+#foto img{
+    object-fit: cover; 
+}
