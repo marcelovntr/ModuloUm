@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleConsultaPreco.css">
+    <title>Document</title>
+</head>
+
+<body>
+<main>
+    <h2>Consulta Online</h2>
+
+
+    <form>
+
+        <input type="text" placeholder="Nome do produto">
+
+        <button id="consulta-btn" onclick="consulta()">CONSULTAR</button>
+
+        <button id="carrinho-btn" onclick="adicionaCarrinho()">CARRINHO</button>
+        <!--botao carrinho soma o valor ao anterior e "reseta" o input
+        plus... acrescenta elemento à listinha-->
+
+    </form>
+
+    <div>
+        
+        <img src="carrinho-de-compras.png" alt="imagem do produto" width="100px">
+        <!--fazer associado ao valor de baixo-->
+
+        <h4 id="valor">Valor do produto: </h4>
+    </div>
+
+    <div>
+        <ul id="listinha">
+
+        </ul>
+        <h4 id="total">Valor total:</h4>
+
+        <button id="comprar-btn">COMPRAR</button>
+    </div>
+
+</main>
+
+    <script src="consultaPreco.js"></script>
+</body>
+
+
+</html>
