@@ -1,49 +1,69 @@
 const formulario = document.querySelector('form');
 formulario.addEventListener("submit", consulta);
 
+
+
+const loja = [
+    { nome: 'mouse', preco: 250.00, imagem: 'mouse.png' },
+    { nome: 'teclado', preco: 199.00, imagem: 'teclado.png' },
+    { nome: 'headset', preco: 300.00, imagem: 'headset.png' },
+    { nome: 'mousepad', preco: 79.00, imagem: 'mousepad.png' }
+];
+
 let produtoInput = document.querySelector('input');
 let valorId = document.querySelector('#valor');
 function precos(produtoNome) {
     switch (produtoNome) {
         case 'mouse':
-        case '1':
-            return 'Valor do produto: R$ 250,00'
+
+            return loja[0].preco
 
         case 'teclado':
-        case '2':
-            return 'Valor do produto: R$ 199,00'
+
+            return loja[1].preco
 
         case 'headset':
-        case '3':
-            return 'Valor do produto: R$ 300,00'
+
+            return loja[2].preco
 
         case 'mousepad':
-        case '4':
-            return 'Valor do produto: R$ 99,00'
 
-        //coloco ou não isso aqui???//////////////////////////////////////////
-        case 'sair':
-        case '0':
-            return 'Programa encerrado'
+            return loja[3].preco
+
 
         default:
-            return 'Produto não cadastrado.'
+            return 'Produto não cadastrado'
     }
 }
 
 
-
-
 function consulta(event) {
-    event.preventDefault();
-    const produtoNome = produtoInput.value;
+    if (event) {
+        event.preventDefault();
+    }
+    const produtoNome = produtoInput.value.toLocaleLowerCase();
     const item = precos(produtoNome);
 
-    
-    valorId.innerText = item;
+
+    valorId.innerText = 'Preço do produto (Un.): ' + item;
+    trocarImagem();
 
 }
 
+function trocarImagem() {
+    console.log("Chamada da função trocarImagem");
+    const figura = document.getElementById('figura');
+    const produtoNome = produtoInput.value.toLocaleLowerCase();
+
+    const figurinha = loja.find(item => item.nome === produtoNome);
+    console.log("Valor de figurinha:", figurinha);
+    if (figurinha) {
+        figura.src = figurinha.imagem;
+    }
+    else {
+        figura.src = '';
+    }
+}
 function adicionaCarrinho() {
     // produtoInput.value = "";
     // valorId.innerText = 'Valor do produto: ';
