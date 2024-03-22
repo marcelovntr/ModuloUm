@@ -64,7 +64,44 @@ function trocarImagem() {
         figura.src = '';
     }
 }
-function adicionaCarrinho() {
-    // produtoInput.value = "";
-    // valorId.innerText = 'Valor do produto: ';
+let carrinho = [];
+
+
+//------------localStorage também está aqui--------------------------------
+function adicionaCarrinho(nomeProduto) {
+    //consulta simples e apresentação do preço correspondente 
+    const produtoNome = produtoInput.value.toLocaleLowerCase();
+    const item = precos(produtoNome);
+    valorId.innerText = item;
+    //---mensagem de adição ao carrinho
+    const produto = loja.find(item => item.nome === produtoNome);
+    if (produto) {
+        carrinho.push(produto);
+        console.log("Produto ", produto, "adicionado ao carrinho");
+        alert("Produto adicionado ao carrinho:", produto);
+    } else {
+        console.log("Produto não encontrado.");
+        alert("Produto não encontrado.");
+    }
+    //LocalStorage
+    //aqui abaixo---------------
+    const produtoInserido = {
+        nome: produtoNome,
+        preco: item
+    }
+
+    localStorage.setItem('umProdCarrinho', JSON.stringify(produtoInserido));
+
+    const produtoInseridosString = localStorage.getItem('produtosCarrinho');
+   
+    let dados = [];
+    if (produtoInseridosString) {
+        dados = JSON.parse(produtoInseridosString);
+    }
+
+    dados.push(produtoInserido);
+
+    localStorage.setItem('produtosCarrinho', JSON.stringify(dados));
+
+    listaCarrinho();
 }
