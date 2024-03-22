@@ -136,8 +136,8 @@ function listaCarrinho() {
     });
 
     // Atualizar os elementos HTML 
-    const totalElement = document.getElementById('total');
-    const quantidadeElement = document.getElementById('quantidade');
+    const totalElement = document.getElementById('total2');
+    const quantidadeElement = document.getElementById('quantidade2');
 
     totalElement.textContent = 'Total da compra: R$ ' + total.toFixed(2);
     quantidadeElement.textContent = 'Itens no carrinho: ' + quantidade;
