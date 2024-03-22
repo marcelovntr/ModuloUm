@@ -142,3 +142,30 @@ function listaCarrinho() {
     totalElement.textContent = 'Total da compra: R$ ' + total.toFixed(2);
     quantidadeElement.textContent = 'Itens no carrinho: ' + quantidade;
 }
+
+function calcularTotal() {
+    const totalCompra = document.getElementById('total');
+    const quantidadeProd = document.getElementById('quantidade');
+    let soma = 0;
+    let contagem = 0;
+
+    // Verificar se o carrinho está vazio
+    if (carrinho.length === 0) {
+        alert('Carrinho vazio');
+        return;
+    }
+
+    // Percorrer cada item no carrinho e somar os preços
+    carrinho.forEach(item => {
+        soma += item.preco;
+        contagem++;
+    });
+
+    // Exibir totais
+    quantidadeProd.innerText = 'Itens no carrinho: ' + contagem;
+    totalCompra.innerText = 'Total da compra: R$ ' + soma.toFixed(2);
+    //alert('Total da compra: R$ ' + soma.toFixed(2));
+
+
+}
+
