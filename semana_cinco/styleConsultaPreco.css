@@ -17,6 +17,10 @@ main{
    
 }
 
+
+#storage{
+    background-color: rgb(43, 137, 226);
+}
 form{
     height: 50px;
     width: 600px;
