@@ -10,6 +10,18 @@
 
 <body>
 <main>
+    
+    <div id="storage">
+        
+        <!--espaço para leitura do localStorage
+        -valor total
+        -quantidade de itens
+        -->
+    </div>
+    <div id="total"></div>
+    <div id="quantidade"></div>
+
+    
     <h2>Consulta Online</h2>
 
 
@@ -27,19 +39,21 @@
 
     <div>
         
-        <img src="carrinho-de-compras.png" alt="imagem do produto" width="100px">
+        <img id="figura" src="carrinho-de-compras.png" alt="imagem do produto" width="100px">
         <!--fazer associado ao valor de baixo-->
 
-        <h4 id="valor">Valor do produto: </h4>
+        <h4 id="valor">Preço: </h4>
     </div>
 
     <div>
         <ul id="listinha">
 
         </ul>
-        <h4 id="total">Valor total:</h4>
+        
+        <h2 id="quantidade"></h2>
+        <h4 id="total"></h4>
 
-        <button id="comprar-btn">COMPRAR</button>
+        <button id="comprar-btn" onclick="calcularTotal()">COMPRAR</button>
     </div>
 
 </main>

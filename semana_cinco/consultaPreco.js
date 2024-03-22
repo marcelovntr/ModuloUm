@@ -105,3 +105,40 @@ function adicionaCarrinho(nomeProduto) {
 
     listaCarrinho();
 }
+
+//--------------para exibir a lista das adições ao carrinho (últimos exercício)
+function listaCarrinho() {
+
+    const produtosCarrinhoString = localStorage.getItem('produtosCarrinho');
+
+    let produtosCarrinho = [];
+    if (produtosCarrinhoString) {
+        produtosCarrinho = JSON.parse(produtosCarrinhoString);
+    }
+
+    const listaStorage = document.getElementById('storage');
+    listaStorage.innerHTML = ''; // Limpa conteúdo anterior
+
+    // Atualiza lista de itens no carrinho
+    produtosCarrinho.forEach(produto => {
+        const listItem = document.createElement('li');
+        listItem.textContent = produto.nome + ' : ' + produto.preco;
+        listaStorage.appendChild(listItem);
+    });
+
+    // total e a quantidade de itens
+    let total = 0;
+    let quantidade = produtosCarrinho.length;
+
+    produtosCarrinho.forEach(produto => {
+        console.log('Preço do produto???', produto.preco);
+        total += Number(produto.preco);
+    });
+
+    // Atualizar os elementos HTML 
+    const totalElement = document.getElementById('total');
+    const quantidadeElement = document.getElementById('quantidade');
+
+    totalElement.textContent = 'Total da compra: R$ ' + total.toFixed(2);
+    quantidadeElement.textContent = 'Itens no carrinho: ' + quantidade;
+}
